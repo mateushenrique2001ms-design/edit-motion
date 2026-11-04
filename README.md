@@ -25,10 +25,13 @@ EDITOR AUTOMÁTICO/
 ## ⚡ Pilha Tecnológica Integrada
 
 - **[Remotion](https://www.remotion.dev/)**: Criação de vídeos programáticos em React e renderização headless.
+- **[Three.js / React Three Fiber](https://docs.pmnd.rs/react-three-fiber/)**: Mockups 3D de aparelhos (iPhone/Mac), iluminação e texturas realistas para prints.
 - **[HyperFrames](https://hyperframes.dev/)**: Animações de alta fidelidade em canvas/DOM com GSAP.
+- **[Zod](https://zod.dev/)**: Validação estrita do contrato de dados da timeline (`timeline.json`).
+- **[Execa](https://github.com/sindresorhus/execa)**: Execução assíncrona robusta e multiplataforma de subprocessos.
 - **[FFmpeg](https://ffmpeg.org/)**: Processamento de vídeo, cortes sem perdas e normalização de loudness a `-14 LUFS`.
 - **[Whisper (whisper.cpp)](https://github.com/ggerganov/whisper.cpp)**: Transcrição automatizada com precisão palavra por palavra.
-- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**: Download rápido de mídias e referências em alta resolução.
+- **[Auto B-Roll](scripts/auto-broll.py)**: Download automático de cenas e vídeos de apoio verticais (Pexels API).
 - **[Prompt Motion](https://prompt-motion.com/)**: Referência de Kinetic Typography, layouts Split Screen e sound design.
 
 ---
@@ -91,6 +94,16 @@ Ele executa o pipeline ponta a ponta:
 
 ## 🛠️ Configuração e Ferramentas
 
+- **Pipeline Multiplataforma (Node.js + Execa + Zod)**:
+  ```bash
+  npm run pipeline
+  ```
+- **Busca e Download Automático de B-Rolls**:
+  ```bash
+  npm run auto-broll
+  # OU passando palavras-chave específicas:
+  python scripts/auto-broll.py -k "artificial intelligence" "finance" "coding"
+  ```
 - **Instalar/Baixar Binários Ausentes (FFmpeg, Whisper, yt-dlp)**:
   ```powershell
   npm run setup:bins
