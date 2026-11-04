@@ -1,0 +1,23 @@
+{
+  "name": "editor-automatico",
+  "version": "1.0.0",
+  "description": "Editor Automatico com Remotion, HyperFrames, Whisper, FFmpeg e yt-dlp",
+  "main": "index.js",
+  "scripts": {
+    "remotion:preview": "remotion preview",
+    "remotion:render": "remotion render",
+    "hyperframes": "hyperframes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "^4.0.540",
+    "gsap": "^3.15.0",
+    "hyperframes": "^0.9.9",
+    "playwright": "^1.64.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.540"
+  }
+}

@@ -1,0 +1,43 @@
+# Binários executáveis pesados (>100MB são bloqueados pelo GitHub)
+bin/*.exe
+bin/*.zip
+bin/*.tar*
+
+# Dependências e Ambientes
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Cache e temporários
+.cache/
+.turbo/
+.npm/
+*.tmp
+*.log
+
+# Arquivos brutos e renders pesados (manter estrutura com .gitkeep)
+ARQUIVO BRUTO/*
+!ARQUIVO BRUTO/.gitkeep
+render/*
+!render/.gitkeep
+IMAGENS/*
+!IMAGENS/.gitkeep
+
+# Vídeos grandes de referência (manter markdown e docs)
+REFERÊNCIAS/*.mp4
+REFERÊNCIAS/*.mov
+REFERÊNCIAS/*.mkv
+referencias/*.mp4
+referencias/*.mov
+
+# Builds Remotion e HyperFrames
+.remotion/
+out/
+dist/
+
+# OS e IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
