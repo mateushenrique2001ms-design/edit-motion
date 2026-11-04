@@ -1,6 +1,6 @@
 # 🎬 Tutorial: Fluxo de Trabalho para Vídeos Virais no Instagram (Reels 9:16)
 
-Guia prático e técnico de produção de alta retenção no **Instagram / TikTok**, combinando as referências visuais de **[Prompt Motion](https://prompt-motion.com/)**, os criadores de referência (`@oluiz.editor`, `@miraclestudios`, `@igao.ia`, `@agenciadebolso`) e a automação do ecossistema **Remotion + HyperFrames + Whisper + FFmpeg**.
+Guia prático e técnico de produção de alta retenção no **Instagram / TikTok**, adaptando dinamicamente o estilo dos **vídeos colocados na pasta `REFERÊNCIAS/`** somado às referências visuais de **[Prompt Motion](https://prompt-motion.com/)** e a automação do ecossistema **Remotion + HyperFrames + Whisper + FFmpeg**.
 
 ---
 
@@ -39,14 +39,22 @@ Organize seus materiais nas pastas do projeto:
 ```text
 EDITOR AUTOMÁTICO/
 ├── ARQUIVO BRUTO/       <- Jogue o vídeo bruto gravado (ex: gravar_01.mp4)
-├── REFERÊNCIAS/         <- Vídeos modelo (@oluiz.editor, @miraclestudios, prompt-motion.md)
+├── REFERÊNCIAS/         <- Coloque qualquer vídeo que você queira que sirva de modelo de edição
 ├── IMAGENS/             <- Logos, prints de telas, ícones SVG, fotos de apoio
 └── render/              <- Onde sairá o vídeo final aprovado (reel-v1.mp4)
 ```
 
 ---
 
-## 3. As 5 Fases do Fluxo Automatizado
+## 3. As 5 Fases do Fluxo Automatizado Baseado em Referências
+
+### FASE 0: Análise Dinâmica da Pasta REFERÊNCIAS/
+> **Objetivo**: Extrair a identidade de edição de qualquer vídeo que você colocar na pasta modelo.
+- Frequência e ritmo dos cortes (segundos por frase).
+- Padrão de escala (Close / Médio / Split).
+- Posicionamento e cores predominantes nos elementos gráficos.
+
+---
 
 ### FASE 1: Corte Cirúrgico do Áudio (Whisper + FFmpeg)
 > **Objetivo**: Eliminar respiradas, "ééés", pausas mortas acima de 0.35s e erros de gravação.
@@ -86,7 +94,7 @@ EDITOR AUTOMÁTICO/
 ---
 
 ### FASE 4: Peças de Interface Animada (UI Cards & Split Screens)
-> **Objetivo**: Estilo `@oluiz.editor` e `@miraclestudios`. Cada termo técnico vira um objeto tridimensional ou de interface.
+> **Objetivo**: Inspirado nas referências da pasta. Cada termo técnico vira um objeto tridimensional ou de interface.
 
 1. **Cards Flutuantes com Glassmorphism**:
    - `background: rgba(18, 18, 24, 0.90)`
@@ -118,7 +126,8 @@ EDITOR AUTOMÁTICO/
 Com a skill e as ferramentas instaladas, basta executar no Claude Code:
 
 ```text
-edita o vídeo que está em ARQUIVO BRUTO seguindo o tutorial de fluxo viral:
+edita o vídeo de ARQUIVO BRUTO se baseando nos vídeos da pasta REFERÊNCIAS/:
+- Extrai o ritmo e o padrão visual dos vídeos de referência
 - Aplica o corte de áudio sem silêncios e sem vícios
 - Aplica a tipografia cinética estilo prompt-motion
 - Adiciona os cards de IMAGENS/ ancorados nas palavras-chave da fala

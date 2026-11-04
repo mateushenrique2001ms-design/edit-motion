@@ -74,9 +74,13 @@ Toda animação e composição deve seguir os padrões de Motion Graphics consag
 
 ## 4. Pipeline de Execução Passo a Passo
 
-### Passo 1: Ingestão e Verificação
-1. Verificar novos arquivos em `ARQUIVO BRUTO/`.
-2. Identificar a resolução e framerate do vídeo fonte via `ffprobe`:
+### Passo 1: Ingestão e Análise Dinâmica das Referências
+1. Varrer a pasta `REFERÊNCIAS/` para analisar os vídeos modelo fornecidos pelo usuário:
+   - Ritmo e frequência de cortes (média de segundos por tomada).
+   - Proporção entre câmera cheia, punch-ins e telas divididas (Split Screens).
+   - Padrão de layout e enquadramento visual.
+2. Ler novos arquivos em `ARQUIVO BRUTO/`.
+3. Identificar resolução, framerate e perfil de áudio via `ffprobe`:
    ```bash
    .\ffprobe.bat -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate -of csv=p=0 "ARQUIVO BRUTO/video.mp4"
    ```
