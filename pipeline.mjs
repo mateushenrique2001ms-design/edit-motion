@@ -69,49 +69,21 @@ async function main() {
     await execa("whisper", [tempAudio, "--model", "large-v3-turbo", "--output_format", "json", "--word_timestamps", "True", "--output_dir", RENDER_DIR], { stdio: "inherit" });
   }
 
-  // 4. Montar e validar contrato timeline.json com Zod
-  console.log("\n[4/5] Estruturando e validando timeline.json com Zod...");
-  let words = [];
-  if (fs.existsSync(transcriptJsonPath)) {
-    const rawData = JSON.parse(fs.readFileSync(transcriptJsonPath, "utf-8"));
-    if (rawData.segments) {
-      for (const seg of rawData.segments) {
-        if (seg.words) {
-          for (const w of seg.words) {
-            words.push({
-              word: (w.word || "").trim(),
-              start: Number(w.start || 0),
-              end: Number(w.end || 0),
-              highlight: (w.word || "").length > 6
-            });
-          }
-        }
-      }
-    }
+  // 4. Montar e validar contrato timeline.json via Auto-Diretor Semantico
+  console.log("\n[4/5] Executando Auto-Diretor Semantico para orquestracao exclusiva...");
+  try {
+    await execa("node", ["scripts/auto-diretor.mjs", transcriptJsonPath], { stdio: "inherit" });
+  } catch (err) {
+    console.warn("[-] Fallback no Auto-Diretor, gerando timeline basica:", err.message);
+    const validTimeline = validateTimeline({
+      version: "1.0.0",
+      meta: { fps: 30, durationInSeconds: 15, durationInFrames: 450, width: 1080, height: 1920, loudnessTargetLUFS: -14.0 },
+      cuts: [],
+      words: [],
+      beats: [{ id: "b1", time: 0.0, type: "punch_in", zoom: 1.15, title: "Hook" }]
+    });
+    fs.writeFileSync(path.join(ROOT_DIR, "timeline.json"), JSON.stringify(validTimeline, null, 2), "utf-8");
   }
-
-  const timelineData = {
-    version: "1.0.0",
-    meta: {
-      fps: 30,
-      durationInSeconds: words.length > 0 ? words[words.length - 1].end + 0.5 : 15,
-      durationInFrames: Math.round((words.length > 0 ? words[words.length - 1].end + 0.5 : 15) * 30),
-      width: 1080,
-      height: 1920,
-      loudnessTargetLUFS: -14.0
-    },
-    cuts: [],
-    words: words,
-    beats: [
-      { id: "b1", time: 0.0, type: "punch_in", zoom: 1.15, title: "Hook" },
-      { id: "b2", time: 3.0, type: "split_screen", zoom: 1.0, title: "Demonstracao" }
-    ]
-  };
-
-  const validTimeline = validateTimeline(timelineData);
-  const timelineJsonPath = path.join(ROOT_DIR, "timeline.json");
-  fs.writeFileSync(timelineJsonPath, JSON.stringify(validTimeline, null, 2), "utf-8");
-  console.log(`[OK] timeline.json validado com sucesso pelo Zod (${validTimeline.words.length} palavras mapeadas).`);
 
   // 5. Renderizacao Remotion e Loudnorm -14 LUFS
   console.log("\n[5/5] Renderizando Remotion e masterizando som para -14 LUFS...");

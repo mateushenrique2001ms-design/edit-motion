@@ -123,7 +123,28 @@ Toda animação e composição deve seguir os padrões de Motion Graphics consag
 
 ---
 
-## 5. Regras da Casa (Invariantes de Qualidade)
+## 5. Diretiva do Auto-Diretor Semântico (Instruções para o Opus 5)
+
+Ao receber a transcrição do vídeo, o modelo de raciocínio (Opus 5) **NUNCA aplica um template engessado**. Cada edição deve ser dirigida sob medida:
+
+1. **Classificação do Tom**:
+   - Se o roteiro for técnico/código: priorizar layouts monospace, telas divididas com prints do terminal/código e SFX secos de digitação (`type.wav`, `click.wav`).
+   - Se for sobre finanças/números: destacar métricas com números gigantes em verde neon (`#00FF88`), subidas com gráficos e `ding.wav`.
+   - Se for reflexivo/dor: diminuir a velocidade dos cortes, manter plano aberto (sem cards) para dar peso às palavras.
+
+2. **Regra de Ouro da Âncora Semântica (Anti-Alucinação)**:
+   - **PROIBIDO** inserir cards, prints ou B-rolls que não tenham ligação direta com o que foi dito na frase.
+   - Só entra card de imagem se houver correspondência com arquivos reais da pasta `IMAGENS/`.
+   - Na ausência de imagem correspondente, o motor usa **Kinetic Typography limpa**, sem poluir a tela.
+
+3. **Orquestração de Beats**:
+   - Gancho inicial (0-3s): Punch-in obrigatório de 1.15x com `whoosh.wav`.
+   - Clímax / Revelação: Alternar entre enquadramento normal e Split Screen com card flutuante a cada 2.5s a 3.5s.
+   - Encerramento: Chamada para ação (CTA) com botão/badge animado e `pop.wav`.
+
+---
+
+## 6. Regras da Casa (Invariantes de Qualidade)
 
 1. **Rosto Livre**: Nenhum card de texto ou gráfico pode cobrir os olhos ou a boca do apresentador.
 2. **Zona Segura 9:16**: Manter elementos interativos longe dos 250px do topo e 320px do rodapé (área ocupada pela interface do Instagram/TikTok).
