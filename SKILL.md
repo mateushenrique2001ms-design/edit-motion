@@ -31,6 +31,7 @@ EDITOR AUTOMÁTICO/
 
 | Ferramenta / Suite | Papel no Pipeline |
 |---|---|
+| **Adobe After Effects (MCP)** | Automação nativa via 70+ ferramentas MCP (Compositions, Layers, Keyframes, Expressões, Fila de Render). |
 | **FFmpeg** | Extração de áudio, normalização para `-14 LUFS`, cortes J/L, mesclagem final de trilha/SFX. |
 | **Whisper (whisper-cli)** | Transcrição precisa com timestamps no nível da palavra para sincronia cinética. |
 | **Remotion** | Renderização programática em React, timeline dinâmica, exportação headless acelerada. |

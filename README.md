@@ -46,6 +46,7 @@ EDITOR AUTOMÁTICO/
 
 ## ⚡ Pilha Tecnológica Integrada
 
+- **[After Effects MCP & Skill](https://github.com/ishu86/after-effects-mcp)**: Controle e automação direta do Adobe After Effects (70+ ferramentas MCP para comps, layers, keyframes, expressões e render).
 - **[Remotion](https://www.remotion.dev/)**: Criação de vídeos programáticos em React e renderização headless.
 - **[Three.js / React Three Fiber](https://docs.pmnd.rs/react-three-fiber/)**: Mockups 3D de aparelhos (iPhone/Mac), iluminação e texturas realistas para prints.
 - **[HyperFrames](https://hyperframes.dev/)**: Animações de alta fidelidade em canvas/DOM com GSAP.
@@ -59,6 +60,9 @@ EDITOR AUTOMÁTICO/
 ---
 
 ## 🎨 Arsenal de Motion Skills Instalado no Claude (`~/.claude/skills/`)
+
+0. **Adobe After Effects Suite & MCP**:
+   - `after-effects` / `after-effects-mcp`: Automação completa do Adobe After Effects através de **70+ ferramentas MCP** — criação de composições, layers de texto/shape, keyframes, interpolações físicas (spring, bounce, elastic), expressões avançadas, presets cinemáticos e exportação. Extensão CEP vinculada em `AppData/Roaming/Adobe/CEP/extensions/com.aemcp.panel`.
 
 1. **Motion Graphics Studio & Vídeo Programático**:
    - `motion-graphics-studio` (haidrrrry/claude-remotion-skill): estúdio completo de motion graphics com Remotion — kinetic typography, transições, overlays (vignette, grain, mesh gradients), sound design e direção de arte.
