@@ -4,6 +4,28 @@
 
 ---
 
+## ⚡ Instalação Rápida em Máquina Nova (Quickstart)
+
+Se você acabou de clonar este repositório em um computador novo:
+
+```bash
+# 1. Clonar o projeto
+git clone https://github.com/mateushenrique2001ms-design/edit-motion.git
+cd edit-motion
+
+# 2. Instalar dependências (Node e Python)
+npm install
+pip install numpy mediapipe opencv-python-headless
+
+# 3. Baixar os binários automáticos (FFmpeg, Whisper e modelo large-v3-turbo)
+npm run setup:bins
+
+# 4. Rodar o editor automático
+npm run pipeline
+```
+
+---
+
 ## 📁 Estrutura de Pastas
 
 ```text
