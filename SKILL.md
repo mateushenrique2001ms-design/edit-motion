@@ -27,9 +27,9 @@ EDITOR AUTOMÁTICO/
 
 ---
 
-## 2. Pilha de Ferramentas Obrigatórias
+## 2. Pilha de Ferramentas & Arsenal de Motion Skills
 
-| Ferramenta | Papel no Pipeline |
+| Ferramenta / Suite | Papel no Pipeline |
 |---|---|
 | **FFmpeg** | Extração de áudio, normalização para `-14 LUFS`, cortes J/L, mesclagem final de trilha/SFX. |
 | **Whisper (whisper-cli)** | Transcrição precisa com timestamps no nível da palavra para sincronia cinética. |
@@ -37,6 +37,15 @@ EDITOR AUTOMÁTICO/
 | **HyperFrames + GSAP** | Animação de interface, kinetic typography, easing suave (`power2.out`, `back.out(1.7)`). |
 | **yt-dlp** | Download de referências ou materiais de apoio sob demanda. |
 | **MediaPipe / OpenCV** | Detecção e rastreamento da boca/olhos para enquadramento inteligente e zonas seguras 9:16. |
+
+### Arsenal de Skills Conectadas no Claude Code (`~/.claude/skills/`):
+- **Motion Graphics Studio**: `motion-graphics-studio` (Remotion art direction, mesh gradients, grain, sound design).
+- **Suíte Oficial Remotion**: `remotion-best-practices`, `remotion-markup`, `remotion-captions`, `remotion-maps`, `remotion-studio`, `remotion-render`, `remotion-create`, `remotion-multimedia`, `remotion-interactivity`, `remotion-saas`.
+- **GSAP Suite Oficial**: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins` (MorphSVG, SplitText, Flip), `gsap-react`, `gsap-frameworks`, `gsap-performance`, `gsap-utils`.
+- **Three.js 3D & Shaders Suite**: `threejs-animation`, `threejs-shaders`, `threejs-react-three-fiber`, `threejs-postprocessing`, `threejs-materials`, `threejs-lighting`, `threejs-fundamentals`.
+- **Micro-Interações Lottie**: `motion-design`, `lottie-motion-design`.
+- **Animações Técnicas & Didáticas**: `manim`, `manim-skill` (ManimCE).
+- **Motor de Edição Automática de Reels**: `reel` / `skill-reel` (corte pelo som, detecção de vícios, -14 LUFS).
 
 ---
 
