@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "fps": 30,
+    "durationInSeconds": 15.0,
+    "durationInFrames": 450,
+    "width": 1080,
+    "height": 1920,
+    "loudnessTargetLUFS": -14.0
+  },
+  "cuts": [
+    { "start": 0.0, "end": 4.5 },
+    { "start": 4.8, "end": 10.2 },
+    { "start": 10.5, "end": 15.0 }
+  ],
+  "words": [
+    { "word": "Como", "start": 0.1, "end": 0.35, "highlight": false },
+    { "word": "eu", "start": 0.36, "end": 0.52, "highlight": false },
+    { "word": "criei", "start": 0.53, "end": 0.85, "highlight": true, "color": "#FFE600" },
+    { "word": "essa", "start": 0.86, "end": 1.05, "highlight": false },
+    { "word": "ferramenta", "start": 1.06, "end": 1.62, "highlight": true, "color": "#00FF88" }
+  ],
+  "beats": [
+    {
+      "id": "beat_01_hook",
+      "time": 0.0,
+      "duration": 3.0,
+      "type": "punch_in",
+      "zoom": 1.15,
+      "title": "Hook Inicial",
+      "sfx": "whoosh.wav"
+    },
+    {
+      "id": "beat_02_demonstracao",
+      "time": 3.0,
+      "duration": 4.5,
+      "type": "split_screen",
+      "zoom": 1.0,
+      "title": "Demonstracao em Card",
+      "cardImage": "car-01.jpg",
+      "sfx": "pop.wav"
+    },
+    {
+      "id": "beat_03_cta",
+      "time": 11.5,
+      "duration": 3.5,
+      "type": "cta",
+      "zoom": 1.0,
+      "title": "Chamada para Acao",
+      "sfx": "click.wav"
+    }
+  ]
+}
