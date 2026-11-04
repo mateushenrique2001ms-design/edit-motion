@@ -70,32 +70,36 @@ EDITOR AUTOMÁTICO/
 
 ---
 
-## 🚀 Como Usar no Claude Code
+## 🚀 Como Executar o Editor Automático
 
-1. Instale ou aponte esta skill no Claude Code:
-   ```bash
-   git clone <url-do-repositorio> ~/.claude/skills/editor-automatico
-   ```
-2. No Claude Code, basta colocar seu arquivo na pasta `ARQUIVO BRUTO/` e executar:
-   ```text
-   edita o vídeo bruto em ARQUIVO BRUTO usando as referências de prompt-motion
-   ```
-3. O Claude executará o ciclo completo:
-   - Limpeza de pausas e gaguejos via Whisper + FFmpeg.
-   - Sincronia de legendas cinéticas (Kinetic Typography).
-   - Inserção de cards e elementos de `IMAGENS/` ancorados nas palavras-chave.
-   - Renderização final e normalização em `render/reel-v1.mp4`.
+### 1. Execução Completa em 1 Comando:
+Basta rodar na raiz do projeto:
+```powershell
+.\executar.ps1
+# OU via npm
+npm run auto-edit
+```
+Ele executa o pipeline ponta a ponta:
+1. Carrega o PATH e verifica todos os binários essenciais.
+2. Analisa os vídeos em `REFERÊNCIAS/` e calibra o `referencias.json`.
+3. Detecta a gravação bruta em `ARQUIVO BRUTO/`.
+4. Roda o Whisper para transcrição com timestamps palavra por palavra.
+5. Renderiza as legendas cinéticas e cards animados com Remotion.
+6. Normaliza o áudio final para **−14 LUFS** e entrega em `render/reel-v1.mp4`.
 
 ---
 
-## 🛠️ Configuração do Ambiente Local
+## 🛠️ Configuração e Ferramentas
 
-Para carregar todas as ferramentas locais na sua sessão do PowerShell:
-```powershell
-.\setup-env.ps1
-```
-
-E para instalar as dependências do ecossistema Node:
-```bash
-npm install
-```
+- **Instalar/Baixar Binários Ausentes (FFmpeg, Whisper, yt-dlp)**:
+  ```powershell
+  npm run setup:bins
+  ```
+- **Recalcular Métricas das Referências**:
+  ```powershell
+  npm run analisar:ref
+  ```
+- **Configurar PATH Local no PowerShell**:
+  ```powershell
+  .\setup-env.ps1
+  ```

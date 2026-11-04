@@ -4,6 +4,9 @@
   "description": "Editor Automatico com Remotion, HyperFrames, Whisper, FFmpeg e yt-dlp",
   "main": "index.js",
   "scripts": {
+    "auto-edit": "powershell -ExecutionPolicy Bypass -File ./executar.ps1",
+    "setup:bins": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-binarios.ps1",
+    "analisar:ref": "python scripts/analisar-referencias.py",
     "remotion:preview": "remotion preview",
     "remotion:render": "remotion render",
     "hyperframes": "hyperframes"

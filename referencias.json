@@ -1,0 +1,133 @@
+{
+  "total_referencias_analisadas": 12,
+  "aspect_ratio_recomendado": "9:16",
+  "largura_padrao": 1080,
+  "altura_padrao": 1920,
+  "fps_padrao": 30.0,
+  "ritmo_medio_corte_segundos": 10.96,
+  "estilo_ritmo": "moderado_didatico",
+  "loudness_alvo_lufs": -14.0,
+  "troca_enquadramento_a_cada_segundos": 12.6,
+  "detalhes_por_video": [
+    {
+      "arquivo": "miraclestudios___AQNbNfMD54RnGtONvl-RKRBUGEcOf4QBPzZ1YeyvqCz9z3MMOVV4vAilPa2adC71iDRXm-jYxqS4gicEu2Flh7Xol7o6KVX5LwNf1N0.mp4",
+      "largura": 716,
+      "altura": 1274,
+      "aspect_ratio": "9:16",
+      "duracao": 15.1,
+      "fps": 30.0,
+      "total_cortes": 5,
+      "ritmo_medio_corte_segundos": 2.52
+    },
+    {
+      "arquivo": "igao.ia_AQN5v9Xy1gaim2G_4rTTWrcsp_vAD9JlnTFyk69ImiZD5AP_EERUG0tqde54LBrNeFLPn25zsAOSWv-ucm00ZMuBbHTrmbO_nSfFGyc.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 87.43,
+      "fps": 30.0,
+      "total_cortes": 7,
+      "ritmo_medio_corte_segundos": 10.93
+    },
+    {
+      "arquivo": "igao.ia_AQN5v9Xy1gaim2G_4rTTWrcsp_vAD9JlnTFyk69ImiZD5AP_EERUG0tqde54LBrNeFLPn25zsAOSWv-ucm00ZMuBbHTrmbO_nSfFGyc.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 87.43,
+      "fps": 30.0,
+      "total_cortes": 7,
+      "ritmo_medio_corte_segundos": 10.93
+    },
+    {
+      "arquivo": "miraclestudios___AQNbNfMD54RnGtONvl-RKRBUGEcOf4QBPzZ1YeyvqCz9z3MMOVV4vAilPa2adC71iDRXm-jYxqS4gicEu2Flh7Xol7o6KVX5LwNf1N0.mp4",
+      "largura": 716,
+      "altura": 1274,
+      "aspect_ratio": "9:16",
+      "duracao": 15.1,
+      "fps": 30.0,
+      "total_cortes": 5,
+      "ritmo_medio_corte_segundos": 2.52
+    },
+    {
+      "arquivo": "oluiz.editor_AQMDqbPoVhS2RghEmsnShW04YUANvgBDQNQa3tnV5EFtnTI9ultyeImKmYhhWkgzLPUj6LIdGXl_PhWfh48q1z6f5rcqp-s-X4b1EvM.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 22.93,
+      "fps": 30.0,
+      "total_cortes": 6,
+      "ritmo_medio_corte_segundos": 3.28
+    },
+    {
+      "arquivo": "agenciadebolso___AQNCRQLE3G-IVTXyEx_R8K1d9hWnWp8Cgx9ZLerO_xVNn7tCoS5RJdqvk0U59J-4Y0Vf0cLNltmPF2JVkFPfUdpzcD2TJmcPiqD960U.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 81.3,
+      "fps": 30.0,
+      "total_cortes": 2,
+      "ritmo_medio_corte_segundos": 27.1
+    },
+    {
+      "arquivo": "oluiz.editor_AQMDqbPoVhS2RghEmsnShW04YUANvgBDQNQa3tnV5EFtnTI9ultyeImKmYhhWkgzLPUj6LIdGXl_PhWfh48q1z6f5rcqp-s-X4b1EvM.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 22.93,
+      "fps": 30.0,
+      "total_cortes": 6,
+      "ritmo_medio_corte_segundos": 3.28
+    },
+    {
+      "arquivo": "igao.ia_AQN5v9Xy1gaim2G_4rTTWrcsp_vAD9JlnTFyk69ImiZD5AP_EERUG0tqde54LBrNeFLPn25zsAOSWv-ucm00ZMuBbHTrmbO_nSfFGyc.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 87.43,
+      "fps": 30.0,
+      "total_cortes": 7,
+      "ritmo_medio_corte_segundos": 10.93
+    },
+    {
+      "arquivo": "agenciadebolso___AQNCRQLE3G-IVTXyEx_R8K1d9hWnWp8Cgx9ZLerO_xVNn7tCoS5RJdqvk0U59J-4Y0Vf0cLNltmPF2JVkFPfUdpzcD2TJmcPiqD960U.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 81.3,
+      "fps": 30.0,
+      "total_cortes": 2,
+      "ritmo_medio_corte_segundos": 27.1
+    },
+    {
+      "arquivo": "agenciadebolso___AQNCRQLE3G-IVTXyEx_R8K1d9hWnWp8Cgx9ZLerO_xVNn7tCoS5RJdqvk0U59J-4Y0Vf0cLNltmPF2JVkFPfUdpzcD2TJmcPiqD960U.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 81.3,
+      "fps": 30.0,
+      "total_cortes": 2,
+      "ritmo_medio_corte_segundos": 27.1
+    },
+    {
+      "arquivo": "oluiz.editor_AQMDqbPoVhS2RghEmsnShW04YUANvgBDQNQa3tnV5EFtnTI9ultyeImKmYhhWkgzLPUj6LIdGXl_PhWfh48q1z6f5rcqp-s-X4b1EvM.mp4",
+      "largura": 720,
+      "altura": 1280,
+      "aspect_ratio": "9:16",
+      "duracao": 22.93,
+      "fps": 30.0,
+      "total_cortes": 6,
+      "ritmo_medio_corte_segundos": 3.28
+    },
+    {
+      "arquivo": "miraclestudios___AQNbNfMD54RnGtONvl-RKRBUGEcOf4QBPzZ1YeyvqCz9z3MMOVV4vAilPa2adC71iDRXm-jYxqS4gicEu2Flh7Xol7o6KVX5LwNf1N0.mp4",
+      "largura": 716,
+      "altura": 1274,
+      "aspect_ratio": "9:16",
+      "duracao": 15.1,
+      "fps": 30.0,
+      "total_cortes": 5,
+      "ritmo_medio_corte_segundos": 2.52
+    }
+  ]
+}
